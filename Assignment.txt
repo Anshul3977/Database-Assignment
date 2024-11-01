@@ -1,0 +1,44 @@
+What is a Database? A database is an organized collection of data that can be easily accessed, managed, and updated. For example, an e-commerce platform may use a database to store customer information, product details, and order history. Databases are essential because they provide a structured way to store large amounts of information, allowing for efficient retrieval and manipulation, which is especially useful in applications where data integrity and accessibility are crucial.
+
+File-Based Storage System: A file-based storage system is a way of storing data in individual files on a system. Data is typically stored in a text or binary format in files, with each file representing a different dataset or information.
+
+Challenges of File-Based Storage System:
+
+Data Redundancy: Data duplication can occur since there is no central management.
+Data Inconsistency: Redundant data might get updated in one place but not in others, causing discrepancies.
+Data Isolation: Data is scattered across different files, making it challenging to retrieve and integrate information.
+Lack of Concurrent Access: File-based systems don’t support multiple users accessing the same data simultaneously.
+Limited Security: File systems lack advanced security features like role-based access control, leading to vulnerabilities.
+What is DBMS and Why Do We Need It? A Database Management System (DBMS) is software that provides a systematic way to create, retrieve, update, and manage data in databases. DBMS was needed to address the limitations of file-based systems, like redundancy, inconsistency, and lack of security, by providing centralized data management, efficient data retrieval, and enhanced data security.
+
+Challenges of File-Based Storage System Tackled by DBMS:
+
+Redundancy Control: DBMS minimizes data duplication by managing data centrally.
+Data Consistency: With DBMS, updates are applied uniformly, ensuring data consistency.
+Data Integrity: DBMS enforces constraints to ensure data validity and accuracy.
+Concurrent Access: DBMS supports multiple users accessing the database simultaneously.
+Enhanced Security: DBMS provides fine-grained access control and data security mechanisms.
+Classification of DBMS:
+
+Relational DBMS (RDBMS): Stores data in tables with rows and columns. Example: MySQL, PostgreSQL.
+NoSQL DBMS: Handles unstructured data using document, key-value, or graph models. Example: MongoDB, Cassandra.
+Object-Oriented DBMS (OODBMS): Stores data as objects, similar to object-oriented programming. Example: db4o.
+Hierarchical DBMS: Data is organized in a tree-like structure. Example: IBM Information Management System (IMS).
+Network DBMS: Represents data in a graph structure, allowing more complex relationships. Example: IDMS.
+Significance of Data Modeling and Types: Data modeling is the process of creating a visual representation of the data structure to ensure data is organized and stored efficiently.
+
+Types of Data Modeling:
+
+Conceptual Data Model: Provides a high-level view, focusing on business entities and relationships.
+Logical Data Model: Adds details such as attributes, data types, and relationships without considering physical storage.
+Physical Data Model: Defines how data is physically stored in the database, considering performance and storage constraints.
+Three-Schema Architecture and Its Advantages: The three-schema architecture divides a database system into three levels:
+
+Internal Level: Defines physical storage details and data access paths.
+Conceptual Level: Represents the structure of the whole database, abstracting away from physical storage.
+External Level: Describes different user views, enabling customized representations for different users.
+Advantages:
+
+Data Abstraction: Separates user applications from physical storage, enhancing flexibility.
+Improved Data Independence: Changes in one schema level don’t necessarily affect others.
+Multiple Views Support: Provides different views for different users, improving accessibility and security.
